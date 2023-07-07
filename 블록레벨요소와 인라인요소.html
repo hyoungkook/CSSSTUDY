@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+
+.sample {
+    display:inline;               /* 블록레벨요소(전체너비차지)를 인라인 요소(일부너비만 차지)로 변환 */
+}
+
+.sample2 {
+    display:block;                /* 인라인요소를 블록레벨요소로 변환 */
+}
+
+.sample3 {
+    display:inline-block;         /* display:inline-block 프로퍼티로 박스를 옆으로 나열  */
+    width:200px;
+    height:100px;
+    margin:10px;
+    border:5px solid #20b2aa;
+}
+
+
+</style>
+</head>
+<body>
+
+<h3>원래의 목록</h3>
+<ul>
+    <li>청년기</li>
+    <li>중년기</li>
+    <li>노년기</li>
+</ul>
+<br><br>
+
+<h3>display:inline이 지정된 목록</h3> 
+<ul>
+    <li class="sample">청년기</li>
+    <li class="sample">중년기</li>
+    <li class="sample">노년기</li>
+</ul>
+<br><br>
+
+<h3>display:block이 지정된 목록</h3>
+<span class="sample2">이 단락은 display:block이 지정되어서</span>         <!-- <span>태그는 원래 일정 부분만 차지하는 인라인 요소임 -->
+<span class="sample2">블록 레벨 요소처럼 각기 1개 라인을 차지합니다.</span>
+
+<br><br>
+<h3>박스를 옆으로 나열하기</h3>
+<p class="sample3">박스 1</p>
+<p class="sample3">박스 2</p>
+<p class="sample3">박스 3</p>
+<p class="sample3">박스 4</p>
+<p class="sample3">박스 5</p>
+<p class="sample3">박스 6</p>
+
+</body>
+</html>
